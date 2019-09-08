@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react'
 import './App.css';
+import AppTamimi from './component/AppTamimi';
 
-function App() {
-  return (
-    <div className="App">
-      hello ggfg
-      
-    </div>
-  );
+ class App extends Component {
+   render(){
+    return (
+      <div className="App">
+        
+        <AppTamimi/>
+       
+  
+        
+      </div>
+    );
+   }
+  
 }
 
 export default App;
