@@ -8,20 +8,22 @@ import VideoShow from './VideoShow';
 export class Card extends Component {
     state = {
 
-        videos: []
+        videos: ""
 
     };
 
     componentDidMount() {
-        axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&q=workout at home&type=video&key=AIzaSyDJfV4Io9lIg28IVDUllIywSI1_v6qWwSk`)
+        axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=
+        OFFICIALTHENX
+        &type=video&key=AIzaSyBdVut9QCzqAHBzfDEh30yUp4E529som6s`)
             .then(res => {
-                console.log(res.data.items);
+                // console.log(res.data.items);
                 this.setState({
                     videos: res.data.items
 
                 }
                 )
-                console.log(this.state.videos[0].id.kind)
+                // console.log(this.state.videos[0].id.kind)
             })
             .catch(err => console.log(err))
         // x = 1;
