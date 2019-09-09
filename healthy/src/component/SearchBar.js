@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import axios from 'axios';
+// import axios from 'axios';
 
 export class SearchBar extends Component {
   state = {
@@ -76,6 +76,7 @@ export class SearchBar extends Component {
                     <div className="form-group">
                         <input
                         className="form-control form-control-lg"
+                       style={{width:"400px",display:"inline" }} 
                         type="text"
                         placeholder="search.."
                         name="title"
@@ -86,7 +87,9 @@ export class SearchBar extends Component {
                 
                     </div>
                     
-                    <button onClick={this.props.find.bind(this,this.state.title)} className="btn btn-primary btn-lg btn-block mb-5" type="submit" >Search</button>
+                    <button onClick={this.props.find.bind(this,this.state.title)}
+                    style={{width:"200px",marginLeft:"600px"}}
+                    className="btn btn-primary btn-lg btn-block mb-5" type="submit" >Search</button>
             
                 
                 {/* { 

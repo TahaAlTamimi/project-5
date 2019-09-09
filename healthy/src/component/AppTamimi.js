@@ -51,8 +51,8 @@ export class AppTamimi extends Component {
                 <SearchBar find={this.find}/>
                {this.state.videos.length===0 &&<Card/>}
               
-              
-               {this.state.videos.length>0 && this.state.videos.map(elem =><Video vid={elem} />)} 
+             
+               {this.state.videos.length>0 && this.state.videos.map((elem,index) =><Video vid={elem} key={index}/>)} 
                 
 
               
